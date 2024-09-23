@@ -30,7 +30,7 @@ const registerCon = async (req, res) => {
             }
         })
     } else {
-        res.redirect("/register");
+        res.redirect("/registerFrom");
     }
     
 }

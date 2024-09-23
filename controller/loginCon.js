@@ -20,7 +20,7 @@ const userLoginCon = async (req, res) => {
                 res.cookie("userID", userLogin[0]._id.toString())
                 res.redirect("/")
             } else {
-                res.redirect("/loginForm")
+                res.redirect("/loginForm");
             }
         })
     } else {

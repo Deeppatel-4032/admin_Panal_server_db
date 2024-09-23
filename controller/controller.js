@@ -5,7 +5,7 @@ const defaultIndexCon = (req, res) => {
         res.render("index.ejs");
     } else {
 
-        res.render("auth-login-basic.ejs");
+        res.render("auth-register-basic.ejs");
     }
 }
 
