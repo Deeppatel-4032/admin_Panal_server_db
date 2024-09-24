@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/admin_db_Data").then(()=> {
+mongoose.connect("mongodb+srv://deeppatel7868:M7383884401DB@cluster1.tzglw.mongodb.net/admin_db_Data").then(()=> {
     console.log("admin_DB is connected....!");
 }).catch((err) => {
     console.log("admin_DB is not connected....!", err);

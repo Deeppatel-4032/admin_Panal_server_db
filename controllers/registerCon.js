@@ -18,8 +18,13 @@ const registerCon = async (req, res) => {
             const user = new user_Model({
                 userName : req.body.userName,
                 email : req.body.email,
+                Contact : req.body.Contact,
+                role : req.body.role,
+                path : req.file.path,
                 password : hashPassword
             })
+            console.log("register user",user);
+            
 
             try {
                 const createdUser = await user.save();

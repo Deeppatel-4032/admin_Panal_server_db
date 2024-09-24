@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="../assets/css/demo.css" />
 
     <!-- Vendors CSS -->
@@ -117,7 +117,7 @@
               <h4 class="mb-1">Adventure starts here 🚀</h4>
               <p class="mb-6">Make your app management easy and fun!</p>
 
-              <form id="formAuthentication" class="mb-6" action="/register" method="post">
+              <form id="formAuthentication" class="mb-6" action="/register" method="post" enctype="multipart/form-data">
                 <div class="mb-6">
                   <label for="username" class="form-label">Username</label>
                   <input
@@ -126,7 +126,7 @@
                     id="username"
                     name="userName"
                     placeholder="Enter your username"
-                    autofocus />
+                    autofocus/>
                 </div>
                 <div class="mb-6">
                   <label for="email" class="form-label">Email</label>
@@ -152,13 +152,37 @@
                       type="password"
                       id="password"
                       class="form-control"
-                      name="com_pass"
-                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                      aria-describedby="password" />
+                      name="com_pass" >
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
-
+                <div class="mb-6">
+                  <label class="form-label">Contact</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="Contact"
+                    placeholder="Enter your Contact"
+                    autofocus />
+                </div>
+                <div class="mb-6 form-password-toggle">
+                  <label class="form-label" for="password">Your profile</label>
+                  <div class="input-group input-group-merge">
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="userImgPath"/>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label for="username" class="form-label">Role</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="role"
+                    placeholder="Enter your role"
+                    autofocus />
+                </div>
                 <div class="my-8">
                   <div class="form-check mb-0 ms-2">
                     <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />

@@ -32,8 +32,8 @@
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css">
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -263,7 +263,7 @@
                 target="_blank"
                 class="menu-link">
                 <i class="menu-icon tf-icons bx bx-envelope"></i>
-                <div class="text-truncate" data-i18n="Email">Email</div>
+                <div class="text-truncate" data-i18n="Email">Email : <%=userEmail%></div>
                 <div class="badge rounded-pill bg-label-primary text-uppercase fs-tiny ms-auto">Pro</div>
               </a>
             </li>
@@ -362,7 +362,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu-item active" style="">
+            <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div class="text-truncate" data-i18n="Pages">Pages</div>
@@ -747,7 +747,7 @@
                     href="javascript:void(0);"
                     data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="<%= userImgPath %>" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -756,12 +756,12 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="<%= userImgPath %>" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <h6 class="mb-0">John Doe</h6>
-                            <small class="text-muted">Admin</small>
+                            <h6 class="mb-0"><%= userName %></h6>
+                            <small class="text-muted"><%= userRole %></small>
                           </div>
                         </div>
                       </a>
@@ -770,7 +770,7 @@
                       <div class="dropdown-divider my-1"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="page-profile.html">
+                      <a class="dropdown-item" href="/profile">
                         <i class="bx bx-user bx-md me-3"></i><span>My Profile</span>
                       </a>
                     </li>
@@ -814,7 +814,7 @@
                     <div class="d-flex align-items-start row">
                       <div class="col-sm-7">
                         <div class="card-body">
-                          <h5 class="card-title text-primary mb-3">Congratulations John! 🎉</h5>
+                          <h5 class="card-title text-primary mb-3">Congratulations <%=userName%>...! 🎉</h5>
                           <p class="mb-6">
                             You have done 72% more sales today.<br />Check your new badge in your profile.
                           </p>

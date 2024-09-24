@@ -13,7 +13,20 @@ const userSchema = mongoose.Schema({
     password : {
         type : String,
         required : true,
+    },
+    Contact : {
+        type : Number,
+        required : true
+    },
+    role : {
+        type : String,
+        required : true
+    },
+    path : {
+        type : String,
+        required : true
     }
+
 })
 
 const user_Model = mongoose.model("users", userSchema);
