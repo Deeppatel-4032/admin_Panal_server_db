@@ -23,9 +23,7 @@ const registerCon = async (req, res) => {
                 path : req.file.path,
                 password : hashPassword
             })
-            console.log("register user",user);
             
-
             try {
                 const createdUser = await user.save();
                 console.log("user", createdUser);

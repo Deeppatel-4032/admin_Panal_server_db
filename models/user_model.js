@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
+    path : {
+        type : String,
+        required : true
+    },
     userName : {
         type : String,
         required : true
@@ -19,10 +23,6 @@ const userSchema = mongoose.Schema({
         required : true
     },
     role : {
-        type : String,
-        required : true
-    },
-    path : {
         type : String,
         required : true
     }

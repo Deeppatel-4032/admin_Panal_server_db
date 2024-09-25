@@ -9,8 +9,8 @@ const defaultIndexCon = async (req, res) => {
         const userImgPath = await req.cookies.userImgPath;
         const userRole = await req.cookies.userRole;
 
-        console.log( "User ID: ", req.cookies.userID );
-        console.log("userName", userName);
+        // console.log( "User ID: ", req.cookies.userID );
+        // console.log("userName", userName);
     
         res.render("index", { userName, userEmail, userContact, userImgPath, userRole });
     } else {
