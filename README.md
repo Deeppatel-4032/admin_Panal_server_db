@@ -59,7 +59,7 @@ To run tests, run the following command
 - **Bcrypt.js**
 
 
-## 3. Running Tests
+### 3. Running Tests
 
 ```bash
     npm start
