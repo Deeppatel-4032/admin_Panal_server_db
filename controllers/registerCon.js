@@ -26,7 +26,7 @@ const registerCon = async (req, res) => {
             
             try {
                 const createdUser = await user.save();
-                console.log("user", createdUser);
+                // console.log("user", createdUser);
                 
             } catch (error) {
                 res.redirect("/loginForm");
