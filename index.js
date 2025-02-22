@@ -9,7 +9,7 @@ const cookies = require("cookie-parser");
 const port = process.env.PORT || 3003;
 const Path = path.join(__dirname,"views/html");
 const db = require("./db/admin_db.js");
-const upload = require("./middleware/amin_multer_middleware.js");
+const upload = require("./middleware/admin_multer_middleware.js");
 
 app.set("view engine", "ejs");
 app.set("views", Path);

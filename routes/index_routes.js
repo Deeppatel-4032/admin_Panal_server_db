@@ -4,7 +4,7 @@ const con = require("../controllers/controller.js");
 const regCon = require("../controllers/registerCon.js");
 const loginCon = require("../controllers/loginCon.js");
 const pageCon = require("../controllers/pages_Con.js");
-const upload = require("../middleware/amin_multer_middleware.js");
+const upload = require("../middleware/admin_multer_middleware.js");
 
 // defalt path
 router.get("/", con.defaultIndexCon)
